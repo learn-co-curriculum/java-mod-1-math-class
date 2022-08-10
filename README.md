@@ -12,10 +12,10 @@ computations ourselves - Java will! Turns out, Java has something we call the
 **Math class** that contains several methods to help us calculate mathematical
 functions!
 
-The Math class does not have any instance variables associated with it and
-contains only static methods. This means that the methods will not depend on an
-object. In this lesson, we will review some of the more common methods from the
-Math class.
+The Math class is part of the package called `java.lang` and contains only
+static methods. This means that the methods will not depend on an object. In
+this lesson, we will review some of the more common methods from the Math
+class.
 
 ## Minimum and Maximum
 
