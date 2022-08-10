@@ -96,11 +96,11 @@ System.out.println("The floor is " + x);
 To invoke the `ceil()` method, we can use dot notation: `Math.ceil()` and
 provide it the variable `x` which is of type `double`. We then can store the
 return value in the `double ceilingValue`. Note that the `ceil()` method returns
-a `double`. The expression, `Math.ceil(x)` will then evaluate to 9. For the
+a `double`. The expression, `Math.ceil(x)` will then evaluate to 9.0. For the
 `floor()` method, we will also make use of dot notation and also provide it the
 `double` parameter. We'll store the floor value in the variable `floorValue`.
 Again, notice that the `floor()` method also returns a `double`. The floor
-expression, `Math.floor(x)` will evaluate to 8.
+expression, `Math.floor(x)` will evaluate to 8.0.
 
 ## Random
 
@@ -141,7 +141,7 @@ System.out.println("Three squared is " + squared);
 The code above shows how the `Math.pow()` can be used. Notice that the `pow()`
 method takes in two parameters of type `double` and also returns a `double`.
 The above `Math.pow(baseNumber, exponent)` would evaluate and assign the
-`squared` variable to 9.
+`squared` variable to 9.0.
 
 We can also take Euler's number (approximately 2.71) and raise that to a power.
 We can do so by using the Math class' `exp()` method. The `exp()` method takes
@@ -176,7 +176,7 @@ Notice how the parameter for the `sqrt()` method is of data type `double`. Let's
 take a look at what the code above would print out:
 
 ```java
-The square root of 36 is 6
+The square root of 36 is 6.0
 ```
 
 ## Resources
