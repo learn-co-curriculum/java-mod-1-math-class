@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-- Learn about the Java Math class
+- Learn about the Java `Math` class
 - Discuss the more common math methods used
 
 ## Let's do the Math!
@@ -12,7 +12,7 @@ computations ourselves - Java will! Turns out, Java has something we call the
 **Math class** that contains several methods to help us calculate mathematical
 functions!
 
-The Math class is part of the package called `java.lang` and contains only
+The `Math` class is part of the package called `java.lang` and contains only
 static methods. This means that the methods will not depend on an object. In
 this lesson, we will review some of the more common methods from the Math
 class.
@@ -21,7 +21,7 @@ class.
 
 Let's say we want to compare two numbers and find the minimum (smallest) and the
 maximum (largest) values between them. We can use the Math class to do this!
-The Math class has a `min()` and a `max()` method that each take two numeric
+The `Math` class has a `min()` and a `max()` method that each take two numeric
 parameters, (can either be of the data types `int`, `double`, `float`, or 
 `long`) and will return the same data type based on the parameters taken in.
 
@@ -37,14 +37,14 @@ int maximum = Math.max(firstInt, secondInt);
 System.out.println("The maximum integer is " + maximum);
 ```
 
-Let's break down the new statements involving the Math class:
+Let's break down the new statements involving the `Math` class:
 
 `int minimum = Math.min(firstInt, secondInt);`
 
 We see that the variables `firstInt` and `secondInt` are assigned to 28 and 4
 respectively. The `min()` method can be invoked by using dot notation with the
 class name: `Math.min()`. By providing the two `int` variables as parameters,
-the Math class will then find the smaller of the two values and return the
+the `Math` class will then find the smaller of the two values and return the
 smallest `int`. In this case, it would return the value of `secondInt` or 4.
 
 `int maximum = Math.max(firstInt, secondInt);`
@@ -56,7 +56,7 @@ would return the value of `firstInt` or 28.
 
 ## Absolute Value
 
-Another method of the Math class is the absolute value method. Absolute value
+Another method of the `Math` class is the absolute value method. Absolute value
 is a non-negative value that describes how distant a number is from 0. For
 example, 0 has 0 distance from itself so its absolute value would be 0. Whereas
 -200 has a distance of 200 from 0. The same can be said for the positive
@@ -78,7 +78,7 @@ Therefore, the expression `Math.abs(firstInt)` will evaluate to 28.
 ## Ceiling and Floor
 
 Sometimes we want to round decimal values to the nearest whole number. This is
-where the `ceil()` and `floor()` methods come in from the Math class! The
+where the `ceil()` and `floor()` methods come in from the `Math` class! The
 `ceil()` method takes a `double` as a parameter and will perform the
 ceiling on it (round the number up). The `floor` method also takes a `double`
 as a parameter and will perform the floor on it (round the number down).
@@ -104,7 +104,7 @@ expression, `Math.floor(x)` will evaluate to 8.0.
 
 ## Random
 
-The Math class can even help us generate random numbers! The `random()` method
+The `Math` class can even help us generate random numbers! The `random()` method
 takes no parameters and will return a `double` greater than or equal to 0.0 and
 less than 1.0.
 
@@ -125,7 +125,7 @@ for example, simulating a die roll.
 
 ## Power and Exponent
 
-We can also use the Math class to raise a number to a certain power.
+We can also use the `Math` class to raise a number to a certain power.
 The `pow()` method takes in two arguments: the base number and the power we
 want the base number raised to. For example, `pow(2,4)` would be the same as
 2 to 4th power or 2 * 2 * 2 * 2. 
@@ -144,7 +144,7 @@ The above `Math.pow(baseNumber, exponent)` would evaluate and assign the
 `squared` variable to 9.0.
 
 We can also take Euler's number (approximately 2.71) and raise that to a power.
-We can do so by using the Math class' `exp()` method. The `exp()` method takes
+We can do so by using the `Math` class' `exp()` method. The `exp()` method takes
 one parameter and that is the power we want to raise e to. For example, `exp(2)`
 is the same as e squared or e * e.
 
@@ -161,7 +161,7 @@ would evaluate and assign the variable `cubed` to 20.085536923187668.
 
 ## Square Root
 
-If we ever want to take a square root of a number, we can do so with the Math
+If we ever want to take a square root of a number, we can do so with the `Math`
 class! The `Math.sqrt()` method takes in the number we want to take the square
 root of as a parameter and will return a `double` of the evaluated expression.
 
