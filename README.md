@@ -5,7 +5,7 @@
 - Learn about the Java `Math` class
 - Discuss the more common math methods used
 
-## Let's do the Math!
+## Let's do the Math
 
 Let's do some math! But don't worry - we won't have to do the heavy
 computations ourselves - Java will! Turns out, Java has something we call the
@@ -22,7 +22,7 @@ class.
 Let's say we want to compare two numbers and find the minimum (smallest) and the
 maximum (largest) values between them. We can use the Math class to do this!
 The `Math` class has a `min()` and a `max()` method that each take two numeric
-parameters, (can either be of the data types `int`, `double`, `float`, or 
+parameters, (can either be of the data types `int`, `double`, `float`, or
 `long`) and will return the same data type based on the parameters taken in.
 
 ```java
@@ -75,7 +75,7 @@ It can be an `int`, `double`, `float`, or `long`. In this case, it takes in an
 `int` so it will return an absolute value of the parameter as an `int`.
 Therefore, the expression `Math.abs(firstInt)` will evaluate to 28.
 
-## Ceiling and Floor
+## Ceil and Floor
 
 Sometimes we want to round decimal values to the nearest whole number. This is
 where the `ceil()` and `floor()` methods come in from the `Math` class! The
@@ -123,12 +123,29 @@ The random number is 0.3034966869965544
 This method is helpful if we want to have the computer generate a random number,
 for example, simulating a die roll.
 
+If we were to create a program to simulate a die roll using the `Math.random()`
+method, we could do something like this:
+
+```java
+int min = 1;
+int max = 6;
+int range = (max - min) + 1;
+
+// Generate random numbers between 1 and 6
+int randomRoll = (int)(Math.random() * range) + min;
+```
+
+To get a random integer value using the `random()` method, we need to define a
+range first. In this case, we hardcoded the numbers 1 and 6 to define the range
+of a standard die. Then we do a little math to ensure that a value between 1 and
+6 is returned and cast it as an `int`.
+
 ## Power and Exponent
 
 We can also use the `Math` class to raise a number to a certain power.
 The `pow()` method takes in two arguments: the base number and the power we
 want the base number raised to. For example, `pow(2,4)` would be the same as
-2 to 4th power or 2 * 2 * 2 * 2. 
+2 to 4th power or 2 *2* 2 * 2.
 
 ```java
 double baseNumber = 3;
