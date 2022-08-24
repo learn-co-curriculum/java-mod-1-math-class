@@ -123,23 +123,6 @@ The random number is 0.3034966869965544
 This method is helpful if we want to have the computer generate a random number,
 for example, simulating a die roll.
 
-If we were to create a program to simulate a die roll using the `Math.random()`
-method, we could do something like this:
-
-```java
-int min = 1;
-int max = 6;
-int range = (max - min) + 1;
-
-// Generate random numbers between 1 and 6
-int randomRoll = (int)(Math.random() * range) + min;
-```
-
-To get a random integer value using the `random()` method, we need to define a
-range first. In this case, we hardcoded the numbers 1 and 6 to define the range
-of a standard die. Then we do a little math to ensure that a value between 1 and
-6 is returned and cast it as an `int`.
-
 ## Power and Exponent
 
 We can also use the `Math` class to raise a number to a certain power.
