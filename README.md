@@ -128,7 +128,7 @@ for example, simulating a die roll.
 We can also use the `Math` class to raise a number to a certain power.
 The `pow()` method takes in two arguments: the base number and the power we
 want the base number raised to. For example, `pow(2,4)` would be the same as
-2 to 4th power or 2 *2* 2 * 2.
+2 to 4th power or 2 * 2 * 2 * 2.
 
 ```java
 double baseNumber = 3;
